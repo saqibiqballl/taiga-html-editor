@@ -44,6 +44,7 @@ import AutoMediaEmbed from '@ckeditor/ckeditor5-media-embed/src/automediaembed';
 
 import MentionCustomization from '../plugins/mention-customization';
 import AttachFile from '../plugins/attach-file';
+import AutoVideoEmbed from '../plugins/auto-video-embed';
 
 import TextPartLanguage from '@ckeditor/ckeditor5-language/src/textpartlanguage';
 
@@ -83,6 +84,7 @@ ClassicEditor.builtinPlugins = [
 	MentionCustomization,
 	RemoveFormat,
 	AttachFile,
+	AutoVideoEmbed,
 	TodoList,
 	HorizontalLine,
 	ImageInsert,
