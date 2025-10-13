@@ -39,6 +39,8 @@ import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+import AutoMediaEmbed from '@ckeditor/ckeditor5-media-embed/src/automediaembed';
 
 import MentionCustomization from '../plugins/mention-customization';
 import AttachFile from '../plugins/attach-file';
@@ -85,6 +87,8 @@ ClassicEditor.builtinPlugins = [
 	HorizontalLine,
 	ImageInsert,
 	LinkImage,
+	MediaEmbed,
+	AutoMediaEmbed,
 	TextPartLanguage
 ];
 
@@ -107,6 +111,7 @@ ClassicEditor.defaultConfig = {
 			'alignment',
 			'|',
 			'imageInsert',
+			'mediaEmbed',
 			'blockQuote',
 			'insertTable',
 			'codeBlock',
