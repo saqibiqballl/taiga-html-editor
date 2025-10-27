@@ -62,8 +62,13 @@ export default class AutoVideoEmbed extends Plugin {
 					html: match => this.createEmbedHtml(match.input)
 				},
 				{
-					name: 'eventassay',
+					name: 'eventassay-staging',
 					url: /^https?:\/\/staging\.projects\.eventassay\.com\/.*$/,
+					html: match => this.createEmbedHtml(match.input)
+				},
+				{
+					name: 'eventassay-production',
+					url: /^https?:\/\/projects\.eventassay\.com\/.*$/,
 					html: match => this.createEmbedHtml(match.input)
 				}
 			];
